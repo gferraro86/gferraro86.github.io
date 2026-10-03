@@ -23,6 +23,8 @@ nav.top ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;font-size:.9
 nav.top ul a{text-decoration:none;color:var(--muted)}nav.top ul a:hover,nav.top ul a.attiva{color:var(--ink)}
 nav.top.scura{background:transparent;border-bottom:0;position:absolute;left:0;right:0;color:#fff}
 nav.top.scura ul a{color:rgba(255,255,255,.8)}nav.top.scura ul a:hover{color:#fff}
+/* telefono: il menu su una riga sola sborda (503px su 360) e il browser rimpicciolisce tutta la pagina */
+@media(max-width:640px){nav.top .wrap{height:auto;flex-direction:column;align-items:flex-start;gap:6px;padding:12px 20px 10px}nav.top ul{gap:18px;flex-wrap:wrap;font-size:.9rem}.wrap{padding:0 20px}section{padding:64px 0}.hero .wrap{padding-bottom:40px;padding-top:140px}.hero h1{font-size:clamp(2.6rem,13vw,3.4rem)}html{overflow-x:hidden}body{overflow-x:hidden}}
 /* hero */
 .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#222}
 .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
